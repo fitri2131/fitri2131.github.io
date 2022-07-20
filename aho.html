@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aho Corasick</title>
+    <style>
+		body {
+			font-size: large;
+		}
+		svg {
+			width: 100%;
+			height: 70%;
+			overflow: hidden;
+			border: 1px solid black;
+			border-radius: 5px;
+			margin-top: 1%;
+		}
+
+		g.type-TK > circle {
+			fill: #00ffd0;
+		}
+
+		.node circle {
+			stroke: #999;
+			fill: #fff;
+			stroke-width: 1.5px;
+		}
+
+		.edgePath path {
+			stroke: #333;
+			stroke-width: 1.5px;
+		}
+
+		span.fail {
+			color: red;
+		}
+		span.match {
+			color: green;
+		}
+		#status {
+			margin-top: 1%;
+		}
+		#tables table {
+			display: inline;
+			margin: 5%;
+		}
+		input[type="range"] {
+			direction: rtl;
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<h1>AhoCorasick</h1>
+	</header>
+	<div>
+		<div>
+			<label>Keywords (comma separated):<br>
+			<input id="keywords" type="slider" title="Comma separeted list of keywords that we are searching for" /></label> <br>
+			<label for="text">Text:</label> <br>
+			<textarea id="text" cols="40" title="Text where we are searching for the keywords">ushers</textarea> <br>
+			<label>Speed: <br><input type="range" title="Running speed" value="80" min="30" max="100" /></label> <br>
+			<button type="button">Run</button>
+			<div id="status">
+				<pre id="text-pre"></pre>
+				Current state: <span id="current-state">0</span> <br>
+				Keywords found: <span id="found"></span>
+			</div>
+			<svg id="goto-function"><g></g></svg>
+			<div id="tables">
+				<table id="failure-function">
+					<caption>Failure function</caption>
+					<thead>
+						<th>i</th>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+				<table id="output-function">
+					<caption>Output function</caption>
+					<thead>
+						<th>i</th>
+						<th>output(i)</th>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dagre-d3/0.6.1/dagre-d3.min.js"></script>
+    <script src="aho.js"></script>
+    <script src="vis.js"></script>
+
+</body>
+</html>
