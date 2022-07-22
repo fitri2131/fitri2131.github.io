@@ -30,7 +30,7 @@
 			'definisi': 'hamsa',
 		}
 	}
-	keywords = 'Fi,Fani,Hamsa';
+	keywords = 'Fi,Fani,Hamsa,';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
@@ -203,8 +203,8 @@
                     let foundStr = '';
                     let found = [];
                     for(var j=0; j<this.output[state].length; j++) {
-                        foundStr += words[this.output[state][j]].kata + ", ";
-                        results.push(words[this.output[state][j]]);
+                        foundStr += obj[this.output[state][j]].kata + ", ";
+                        results.push(obj[this.output[state][j]]);
                     }
                     if((i+1) == string.length) {
                         found = [i, foundStr.slice(0,-1)]
