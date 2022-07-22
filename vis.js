@@ -13,7 +13,7 @@
             obj[key] = words[key];
             str += words[key].kata + ',';
         }
-	str = '.....';
+	str = 'Fi, Fani, Hamsa';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
