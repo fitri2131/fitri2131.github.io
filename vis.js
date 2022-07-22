@@ -28,9 +28,9 @@
 			'id': '3',
 			'kata': 'hamsa',
 			'definisi': 'hamsa',
-		}
+		},
 	}
-	str = 'fi,fani,hamsa,';
+	keywords = 'fi,fani,hamsa,';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
