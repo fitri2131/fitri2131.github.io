@@ -26,11 +26,11 @@
 		},
 		'3' : {
 			'id': '3',
-			'kata': 'fitri hamsa',
-			'definisi': 'fitri hamsa',
+			'kata': 'fitrihamsa',
+			'definisi': 'fitrihamsa',
 		},
 	}
-	keywords = 'fiti,fani,fitri hamsa,';
+	keywords = 'fiti,fani,fitrihamsa,';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
