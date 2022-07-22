@@ -13,7 +13,7 @@
             obj[key] = words[key];
             str += words[key].kata + ',';
         }
-	obj = {
+	word = {
 		'1' : {
 			'id': '1',
 			'kata': 'fiti',
@@ -203,8 +203,8 @@
                     let foundStr = '';
                     let found = [];
                     for(var j=0; j<this.output[state].length; j++) {
-                        foundStr += obj[this.output[state][j]].kata + ", ";
-                        results.push(obj[this.output[state][j]]);
+                        foundStr += word[this.output[state][j]].kata + ", ";
+                        results.push(word[this.output[state][j]]);
                     }
                     if((i+1) == string.length) {
                         found = [i, foundStr.slice(0,-1)]
