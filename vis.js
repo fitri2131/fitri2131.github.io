@@ -16,8 +16,8 @@
 	obj = {
 		'1' : {
 			'id': '1',
-			'kata': 'fi',
-			'definisi': 'fi',
+			'kata': 'fiti',
+			'definisi': 'fiti',
 		},
 		'2' : {
 			'id': '2',
@@ -26,11 +26,11 @@
 		},
 		'3' : {
 			'id': '3',
-			'kata': 'hamsa',
-			'definisi': 'hamsa',
+			'kata': 'fitri hamsa',
+			'definisi': 'fitri hamsa',
 		},
 	}
-	keywords = 'fi,fani,hamsa,';
+	keywords = 'fiti, fani, fitri hamsa';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
