@@ -28,7 +28,7 @@
 			'id': '3',
 			'kata': 'fitri hamsa',
 			'definisi': 'fitri hamsa',
-		},
+		}
 	}
 	keywords = 'fiti,fani,fitri hamsa,';
         var keywords = document.querySelector('#keywords');
