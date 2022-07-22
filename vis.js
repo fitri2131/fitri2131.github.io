@@ -21,8 +21,8 @@
 		},
 		'2' : {
 			'id': '2',
-			'kata': 'fani',
-			'definisi': 'fani',
+			'kata': 'indah',
+			'definisi': 'indah',
 		},
 		'3' : {
 			'id': '3',
@@ -30,7 +30,7 @@
 			'definisi': 'fitri hamsa',
 		},
 	}
-	keywords = 'fiti,fani,fitri hamsa,';
+	keywords = 'fiti,indah,fitri hamsa,';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
