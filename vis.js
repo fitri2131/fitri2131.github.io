@@ -30,7 +30,7 @@
 			'definisi': 'hamsa',
 		}
 	}
-	keywords = 'Fi,Fani,Hamsa,';
+	keywords = 'Fi,Fani,Hamsa';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
