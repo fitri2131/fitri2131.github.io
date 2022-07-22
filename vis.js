@@ -185,8 +185,8 @@
                     let foundStr = '';
                     let found = [];
                     for(var j=0; j<this.output[state].length; j++) {
-                        foundStr += word[this.output[state][j]].kata + ", ";
-                        results.push(word[this.output[state][j]]);
+                        foundStr += words[this.output[state][j]].kata + ", ";
+                        results.push(words[this.output[state][j]]);
                     }
                     if((i+1) == string.length) {
                         found = [i, foundStr.slice(0,-1)]
