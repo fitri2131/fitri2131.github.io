@@ -14,10 +14,20 @@
             str += words[key].kata + ',';
         }
 	obj = {
-		'(1, 2, 3)' : {
-			'id': '',
-			'kata': '',
-			'definisi': ''
+		'1' : {
+			'id': '1',
+			'kata': 'fi',
+			'definisi': 'fi',
+		},
+		'2' : {
+			'id': '2',
+			'kata': 'fani',
+			'definisi': 'fani',
+		},
+		'3' : {
+			'id': '3',
+			'kata': 'hamsa',
+			'definisi': 'hamsa',
 		}
 	}
 	keywords = 'Fi,Fani,Hamsa,';
