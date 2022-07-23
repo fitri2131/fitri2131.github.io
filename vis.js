@@ -31,7 +31,7 @@
 		 },
 	    	    
 	    }
-	str = 'fiti','fitri hamsa','indah',;
+	keywords = 'fiti','fitri hamsa','indah',;
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
