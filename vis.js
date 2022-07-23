@@ -22,7 +22,7 @@
 		    '2' : {
 			 'id': '2',
 			 'kata': 'fitri hamsa',
-			 'definisi': 'fiti hamsa',
+			 'definisi': 'fitri hamsa',
 		 }
 		    '3' : {
 			 'id': '3',
