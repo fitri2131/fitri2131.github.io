@@ -18,19 +18,18 @@
 			 'id': '1',
 			 'kata': 'fiti',
 			 'definisi': 'fiti',
-		 },
+		 }
 		    '2' : {
 			 'id': '2',
 			 'kata': 'fitri hamsa',
 			 'definisi': 'fiti hamsa',
-		 },
+		 }
 		    '3' : {
 			 'id': '3',
 			 'kata': 'indah',
-			 'definisi': 'indah',
+			 'definisi': 'indah'
 		 },
-	    
-	    
+	    	    
 	    }
 	keywords = 'fiti','fitri hamsa','indah',;
         var keywords = document.querySelector('#keywords');
