@@ -13,25 +13,6 @@
             obj[key] = words[key];
             str += words[key].kata + ',';
         }
-	    obj = {
-		    '1' : {
-			 'id': '1',
-			 'kata': 'fitri',
-			 'definisi': 'fitri',
-		 },
-		    '2' : {
-			 'id': '2',
-			 'kata': 'fitri hamsa',
-			 'definisi': 'fitri hamsa',
-		 },
-		    '3' : {
-			 'id': '3',
-			 'kata': 'indah',
-			 'definisi': 'indah',
-		 }
-	    	    
-	    }
-	str = 'fitri','fitri hamsa','indah';
         var keywords = document.querySelector('#keywords');
         keywords.value = str;
         str = str.slice(0,-1);
@@ -204,8 +185,8 @@
                     let foundStr = '';
                     let found = [];
                     for(var j=0; j<this.output[state].length; j++) {
-                        foundStr += obj[this.output[state][j]].kata + ", ";
-                        results.push(obj[this.output[state][j]]);
+                        foundStr += words[this.output[state][j]].kata + ", ";
+                        results.push(words[this.output[state][j]]);
                     }
                     if((i+1) == string.length) {
                         found = [i, foundStr.slice(0,-1)]
