@@ -3,7 +3,7 @@
     let words = {};
     let obj = {};
     let str = '';
-    $.get("https://kamus-632a9-default-rtdb.asia-southeast1.firebasedatabase.app/kamus.json", function(data, status){
+    $.get("https://kamus-69b35-default-rtdb.asia-southeast1.firebasedatabase.app/kamus.json", function(data, status){
         for(const key in data) {
             words[key] = data[key];
         }
