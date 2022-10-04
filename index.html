@@ -72,13 +72,22 @@
               <table id="tabel-kamus" class="table table-stripped table-hover table-bordered">
                 <thead>
                   <tr>
+                    <td></td>
+                    <td>
+                      <input type="text" class="form-control" name="search-word" id="search-word">
+                    </td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
                     <th>#</th>
                     <th>Kata</th>
                     <th>Definisi</th>
                     <th>Aksi</th>
                   </tr>
                 </thead>
-                <tbody id="tbody"></tbody>
+                <tbody id="tbody">
+                </tbody>
               </table>
             </div>
           </div>
@@ -128,15 +137,15 @@
       
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
       import { getDatabase, ref, set, get, child, update, remove } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
-      
+    
       const firebaseConfig = {
-        apiKey: "AIzaSyDo6rwQRwCTP0oHA6LDNh30v4gTK1bKjp0",
-        authDomain: "kamus-69b35.firebaseapp.com",
-        databaseURL: "https://kamus-69b35-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "kamus-69b35",
-        storageBucket: "kamus-69b35.appspot.com",
-        messagingSenderId: "479739818774",
-        appId: "1:479739818774:web:3f7fb19f9802806c599637"
+        apiKey: "AIzaSyD0E6Sv_LhBLcOYSCJ8NUSPUG8ERrslp9g",
+        authDomain: "kamus-632a9.firebaseapp.com",
+        databaseURL: "https://kamus-632a9-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "kamus-632a9",
+        storageBucket: "kamus-632a9.appspot.com",
+        messagingSenderId: "350057776923",
+        appId: "1:350057776923:web:a0ed15572b935e9719f5be"
       };
       const app = initializeApp(firebaseConfig);
       const database = getDatabase();
@@ -319,7 +328,16 @@
             });
           }
           $(document).ready(function () {
-              $('#tabel-kamus').DataTable();
+              const table = $('#tabel-kamus').DataTable();
+
+              $('#search-word').on('change', function(){
+    
+                table
+                .column(1)
+                .search(this.value)
+                .draw();
+
+              });
           });
         }).catch((err) => {
           console.log( err );
